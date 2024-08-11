@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cobamenu">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang, \nPetani Padi"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/productsans"></TextView>
+
+        <ImageView
+            android:id="@+id/contact"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:onClick="about"
+            android:src="@drawable/contact"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></ImageView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cuaca_card"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clickable="true"
+        android:onClick="cuaca_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:foreground="@drawable/bg_stroke"
+        android:backgroundTint="?attr/colorSecondary"
+        app:cardCornerRadius="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        >
+
+        <TextView
+            android:id="@+id/cuaca_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuaca Hari Ini"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/productsans"></TextView>
+        <ImageView
+            android:id="@+id/image_cuaca"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/broken"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Purwakarta"
+                android:textColor="?attr/colorOnSecondary"
+                android:fontFamily="@font/productsans"/>
+        <TextView
+            android:id="@+id/result_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cuaca_title"
+            android:layout_gravity="center"
+            android:text="20"
+            android:textSize="60dp"
+            android:textColor="?attr/colorOnSecondary"
+            android:fontFamily="@font/productsans"></TextView>
+
+            <TextView
+                android:id="@+id/result_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="hujan"
+                android:textColor="?attr/colorOnSecondary"
+                android:fontFamily="@font/productsans"/>
+            <TextView
+                android:id="@+id/result_info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="kelembapan"
+                android:textColor="?attr/colorOnSecondary"
+                android:fontFamily="@font/productsans"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/jenis_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cuaca_card"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Jenis Penyakit Pada Tanaman Padi"
+        android:textColor="?attr/colorOnSecondary"
+        android:fontFamily="@font/productsans"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/jenis_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jenis_judul"
+
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hispa_card"
+            android:clickable="true"
+            android:onClick="hispa_page"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:backgroundTint="?attr/colorPrimary"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hispa_cardd"
+                android:layout_gravity="top"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hispa"
+                android:layout_marginTop="84dp"
+                android:layout_marginStart="4dp"
+                android:textColor="?attr/colorOnPrimary"
+                android:fontFamily="@font/productsansbold"
+                android:textSize="16sp"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Penyakit jamur hispa"
+                 android:layout_marginTop="104dp"
+                 android:layout_marginStart="4dp"
+                 android:textColor="?attr/colorOnPrimary"
+                 android:fontFamily="@font/productsans"
+                 android:textSize="14sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/leafblast_card"
+            android:clickable="true"
+            android:onClick="lb_page"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:backgroundTint="?attr/colorPrimary"
+            app:cardCornerRadius="8dp"
+            android:layout_toRightOf="@id/hispa_card"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/leafblast_card"
+                android:layout_marginTop="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leafblast"
+                android:layout_marginTop="84dp"
+                android:layout_marginStart="4dp"
+                android:textColor="?attr/colorOnPrimary"
+                android:fontFamily="@font/productsansbold"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bercak-bercak pada daun"
+                android:layout_marginTop="104dp"
+                android:layout_marginStart="4dp"
+                android:textColor="?attr/colorOnPrimary"
+                android:fontFamily="@font/productsans"
+                android:textSize="14sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rust_card"
+            android:clickable="true"
+            android:onClick="bs_page"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:backgroundTint="?attr/colorPrimary"
+            app:cardCornerRadius="8dp"
+            android:layout_toRightOf="@id/leafblast_card"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/brownspot_card"
+                android:layout_marginTop="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brownspot"
+                android:layout_marginTop="84dp"
+                android:layout_marginStart="4dp"
+                android:textColor="?attr/colorOnPrimary"
+                android:fontFamily="@font/productsansbold"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bintik hitam pada daun"
+                android:layout_marginTop="104dp"
+                android:layout_marginStart="4dp"
+                android:textColor="?attr/colorOnPrimary"
+                android:fontFamily="@font/productsans"
+                android:textSize="14sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/deteksi_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jenis_card"
+        android:text="Deteksi Penyakit Pada Padi"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSecondary"
+        android:fontFamily="@font/productsans"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/deteksi_card"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:layout_below="@id/deteksi_judul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="12dp">
+
+        <RelativeLayout
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp">
+            <ImageView
+                android:id="@+id/img_scan"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/logo_scan"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_scan"
+                android:text="Upload atau \nAmbil Gambar"
+                android:textAlignment="center"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:textColor="?attr/colorOnSecondary"
+                android:fontFamily="@font/productsans"></TextView>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"></ImageView>
+
+        <RelativeLayout
+            android:id="@+id/ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/img_ml"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/logo_ml"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                ></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_ml"
+                android:text="Klasifikasi Jenis\nPenyakit dengan CNN"
+                android:textAlignment="center"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:textColor="?attr/colorOnSecondary"
+                android:fontFamily="@font/productsans"></TextView>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="30dp"></ImageView>
+
+        <RelativeLayout
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp">
+            <ImageView
+                android:id="@+id/img_result"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/logo_result"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_result"
+                android:text="Dapatkan Hasil\nDeteksi Penyakit"
+                android:textAlignment="center"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:textColor="?attr/colorOnSecondary"
+                android:fontFamily="@font/productsans"></TextView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/ml_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Mulai Deteksi Penyakit"
+            android:fontFamily="@font/productsans"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/harga_jdul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deteksi_card"
+        android:text="Harga Beras Bulan Ini"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSecondary"
+        android:fontFamily="@font/productsans"/>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:onClick="grafik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="16sp"
+            android:layout_below="@id/harga_jdul"
+            app:cardCornerRadius="8sp"
+            android:backgroundTint="?attr/colorSecondary">
+
+            <TextView
+                android:id="@+id/harga_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Rata-Rata Beras di Grosir"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSecondary"
+                android:fontFamily="@font/productsans"
+                android:layout_marginTop="8sp"
+                android:layout_marginStart="8sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="38sp"
+                android:layout_marginStart="8sp">
+
+            <TextView
+                android:id="@+id/harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 123"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSecondary"
+                android:fontFamily="@font/productsans"
+                 />
+
+            <ImageView
+                android:id="@+id/ivTrendIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_upward"
+                android:layout_marginStart="10sp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Perbulan : "
+                android:textSize="16dp"
+                android:textColor="?attr/colorOnSecondary"
+                android:fontFamily="@font/productsans"
+                android:layout_marginTop="68sp"
+                android:layout_marginStart="8sp"
+                android:layout_marginBottom="8sp"/>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

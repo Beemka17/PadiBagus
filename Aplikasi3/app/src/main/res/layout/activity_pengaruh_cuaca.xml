@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengaruhCuaca">
+
+    <RelativeLayout
+        android:id="@+id/cuaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16sp"
+        android:paddingBottom="16sp"
+        android:background="?attr/colorSecondary">
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kecamatan Purwakarta"
+            android:textSize="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginStart="16sp"
+            android:textColor="?attr/colorOnSecondary"
+            android:fontFamily="@font/productsans"/>
+
+        <TextView
+            android:id="@+id/result_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20°C"
+            android:textSize="60sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginStart="16sp"
+            android:layout_below="@id/city"
+            android:textColor="?attr/colorOnSecondary"
+            android:fontFamily="@font/productsans"/>
+
+        <TextView
+            android:id="@+id/result_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuaca Hari Ini / "
+            android:textSize="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginStart="16sp"
+            android:layout_below="@id/result_info"
+            android:textColor="?attr/colorOnSecondary"
+            android:fontFamily="@font/productsans"/>
+
+        <TextView
+            android:id="@+id/result_info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelembapan : 91%"
+            android:textSize="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginStart="2sp"
+            android:layout_marginBottom="8sp"
+            android:layout_below="@id/result_info"
+            android:layout_toRightOf="@id/result_info2"
+            android:textColor="?attr/colorOnSecondary"
+            android:fontFamily="@font/productsans"/>
+
+        <ImageView
+            android:id="@+id/image_cuaca"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16sp"
+            android:src="@drawable/broken_100"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pengaruh_lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kondisi Cuaca Saat Ini Tidak Mendukung Perkembang Biakan dan Serangan Penyakit Leafblast Pada Tanaman Padi"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/cuaca"
+        android:layout_marginTop="16sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:fontFamily="@font/productsans"
+        android:background="@drawable/rounded"
+        android:padding="8sp"/>
+
+    <TextView
+        android:id="@+id/pengaruh_bs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kondisi Cuaca Saat Ini Tidak Mendukung Perkembang Biakan dan Serangan Penyakit Brownspot Pada Tanaman Padi"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/pengaruh_lb"
+        android:layout_marginTop="16sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:fontFamily="@font/productsans"
+        android:background="@drawable/rounded"/>
+
+    <TextView
+        android:id="@+id/pengaruh_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kondisi Cuaca Saat Ini Tidak Mendukung Perkembang Biakan dan Serangan Hispa Pada Tanaman Padi"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/pengaruh_bs"
+        android:layout_marginTop="16sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:fontFamily="@font/productsans"
+        android:background="@drawable/rounded"/>
+
+</RelativeLayout>

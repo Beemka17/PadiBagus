@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16sp">
+    
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
+            android:layout_marginTop="40sp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon"/>
+
+        <TextView
+            android:id="@+id/jdul1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentang Aplikasi"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="40sp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="?attr/colorOnSecondary"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/productsans"/>
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="150sp"
+            android:layout_height="5sp"
+            android:src="@drawable/line"
+            android:layout_marginTop="6sp"
+            android:layout_below="@id/jdul1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/text_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_marginTop="16sp"
+            android:textAlignment="center"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:fontFamily="@font/productsans"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="16sp"
+            android:text="PadiBagus adalah aplikasi yang dibangun dengan tujuan untuk meningkatkan produktivitas para petani padi. Aplikasi ini merupakan hasil implementasi dari suatu penelitian yang berjudul Klasifikasi Jenis Penyakit Pada Tumbuhan Padi Menggunakan Citra Daun Padi Dengan Metode Convolutional Neural Network Arsitektur Mobilenetv3 Large. Penelitian tersebut didasari atas menurunnya jumlah produksi padi dan luas lahan panen padi di Indonesia dari tahun 2021 hingga tahun 2023. Harapannya dengan adanya aplikasi ini, jumlah produksi beras serta jumlah luas lahan panen padi dapat meningkat kedepannya."/>
+
+        <TextView
+            android:id="@+id/jdul2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentang Pengembang"
+            android:layout_below="@id/text_desc"
+            android:layout_marginTop="16sp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="?attr/colorOnSecondary"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/productsans"/>
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="208sp"
+            android:layout_height="5sp"
+            android:src="@drawable/line"
+            android:layout_marginTop="6sp"
+            android:layout_below="@id/jdul2"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/bmk"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_below="@id/line2"
+            android:src="@drawable/bmk"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/chatBubble"
+            android:layout_width="300sp"
+            android:layout_height="350sp"
+            android:background="@drawable/chat"
+            android:orientation="vertical"
+            android:paddingTop="8sp"
+            android:paddingStart="60sp"
+            android:layout_marginEnd="26sp"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@id/bmk"
+            android:layout_below="@id/line2">
+
+            <TextView
+                android:id="@+id/chatMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi, Perkenalkan saya Bagus M Kusuma, saya adalah pengembang aplikasi ini. Saya adalah lulusan Teknik Informatika. Selama saya menjadi mahasiswa Teknik Informatika, saya mempelajari beberapa skill seperti Data Science, Mobile Programming, Web Programming, UI-UX Design, Database Management, dll. Selain memiliki skill di bidang Informatika, saya juga memiliki skill pada manajemen quality dan pemahaman mengenai ISO:9001. Silahkan hubungi saya jika ada yang perlu anda diskusikan, Thank You!"
+                android:fontFamily="@font/productsansitalic"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!--<TextView
+            android:id="@+id/text_desc2"
+            android:layout_width="300sp"
+            android:layout_height="250sp"
+            android:layout_below="@id/line2"
+            android:layout_marginTop="16sp"
+            android:layout_toRightOf="@id/bmk"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:fontFamily="@font/productsansitalic"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Hi, Perkenalkan saya Bagus M Kusuma, saya adalah pengembang aplikasi ini. Saya adalah lulusan Teknik Informatika. Selama saya menjadi mahasiswa Teknik Informatika, saya mempelajari beberapa skill seperti Data Science, Mobile Programming, Web Programming, UI-UX Design, Database Management, dll. Selain memiliki skill di bidang Informatika, saya juga memiliki skill pada manajemen quality dan pemahaman mengenai ISO:9001. Silahkan hubungi saya jika ada yang perlu anda diskusikan, Thank You!"/>-->
+
+        <TextView
+            android:id="@+id/jdul3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hubungi Pengembang"
+            android:layout_below="@id/chatBubble"
+            android:layout_marginTop="16sp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="?attr/colorOnSecondary"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/productsans"/>
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="208sp"
+            android:layout_height="5sp"
+            android:src="@drawable/line"
+            android:layout_marginTop="6sp"
+            android:layout_below="@id/jdul3"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_below="@id/line3"
+            android:backgroundTint="?attr/colorPrimaryVariant"
+            app:cardCornerRadius="8sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8sp">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Email"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:backgroundTint="@color/white"
+                    style="@style/CustomEditText"
+                    android:fontFamily="@font/productsans"/>
+
+                <EditText
+                    android:id="@+id/etSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etEmail"
+                    android:hint="Subject"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:backgroundTint="@color/white"
+                    style="@style/CustomEditText"
+                    android:fontFamily="@font/productsans"/>
+
+                <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Email"
+                    android:layout_below="@id/etMessage"
+                    android:backgroundTint="@color/white"
+                    android:textColor="?attr/colorPrimaryVariant"
+                    android:fontFamily="@font/productsans"/>
+
+                <EditText
+                    android:id="@+id/etMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Message"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:lines="5"
+                    android:layout_below="@id/etSubject"
+                    android:fontFamily="@font/productsans"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:backgroundTint="@color/white"
+                    style="@style/CustomEditText"/>
+
+                <TextView
+                    android:id="@+id/sm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Social Media"
+                    android:layout_below="@id/btnSend"
+                    android:layout_marginTop="10sp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/productsans"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/linked"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/sm"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="28sp"
+                    android:clickable="true"
+                    android:onClick="openli"
+                    android:src="@drawable/li_logo"
+                    tools:ignore="OnClick,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/ig_logo"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/sm"
+                    android:layout_marginStart="48sp"
+                    android:layout_marginTop="28sp"
+                    android:layout_toRightOf="@id/linked"
+                    android:clickable="true"
+                    android:onClick="openig"
+                    android:src="@drawable/ig_logo"
+                    tools:ignore="OnClick,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/wa_logo"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/sm"
+                    android:layout_marginTop="28sp"
+                    android:layout_marginEnd="48sp"
+                    android:layout_marginBottom="8sp"
+                    android:layout_toLeftOf="@id/linked"
+                    android:clickable="true"
+                    android:onClick="openwa"
+                    android:src="@drawable/wa_logo"
+                    tools:ignore=",SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

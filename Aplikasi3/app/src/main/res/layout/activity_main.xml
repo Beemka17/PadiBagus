@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnPrimary"
+    android:backgroundTint="?attr/colorOnPrimary"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="362dp"
+        android:layout_height="62sp"
+        android:layout_above="@id/button2"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:text="Ambil foto"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/productsans"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="362dp"
+        android:layout_height="48sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_700"
+        android:backgroundTint="@color/teal_200"
+        android:text="Upload foto"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/productsans"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12sp"
+        android:src="@drawable/img_add"/>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:text="* Untuk hasil maksimal disarankan untuk menggunakan foto daun padi dengan latar putih dan jarak kamera sekitar 15 - 30cm"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:fontFamily="@font/productsans"/>
+
+    <TextView
+        android:id="@+id/classified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22sp"
+        android:text="Kondisi Kesehatan Padi:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/productsans"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/classified"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#C30000"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/productsans"/>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#C30000"
+        android:textSize="20sp"
+        android:fontFamily="@font/productsans"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Detail lengkap"
+        android:id="@+id/testButtonId"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/desc"
+        android:fontFamily="@font/productsans"/>
+
+</RelativeLayout>

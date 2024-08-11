@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.ij.mlwithtensorflowlite">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="PadiBagus"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MLWithTensorFlowLite">
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".PengaruhCuaca"
+            android:exported="false" />
+        <activity
+            android:name=".GrafikHarga"
+            android:exported="false" />
+        <activity
+            android:name=".Cobamenu"
+            android:exported="false" />
+        <activity
+            android:name=".Leafblast"
+            android:exported="false"
+            android:label="@string/title_activity_leafblast"
+            android:theme="@style/Theme.MLWithTensorFlowLite.NoActionBar" />
+        <activity
+            android:name=".Brownspot"
+            android:exported="false"
+            android:label="@string/title_activity_brownspot"
+            android:theme="@style/Theme.MLWithTensorFlowLite.NoActionBar" />
+        <activity
+            android:name=".Hispa"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.MLWithTensorFlowLite.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

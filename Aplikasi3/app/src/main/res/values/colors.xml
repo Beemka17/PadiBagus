@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF9900</color>
+    <color name="purple_700">#E88000</color>
+    <color name="teal_200">#333333</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ijo">#1cbd57</color>
+    <color name="merah">#e01102</color>
+    <color name="emas">#F8C13F</color>
+    <color name="ijo2">#13A749</color>
+    <color name="ijo_muda">#EFEFEF</color>
+</resources>

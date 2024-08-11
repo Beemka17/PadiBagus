@@ -1,0 +1,171 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_leafblast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Leafblast">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginTop="16sp"
+            app:cardCornerRadius="8sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_marginTop="8sp">
+
+                <TextView
+                    android:id="@+id/jdul1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penjelasan"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/productsans"/>
+                <ImageView
+                    android:id="@+id/line1"
+                    android:layout_width="120sp"
+                    android:layout_height="5sp"
+                    android:src="@drawable/line"
+                    android:layout_below="@id/jdul1"
+                    android:layout_marginTop="5sp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penyakit leaf blast pada tanaman padi adalah penyakit yang disebabkan oleh jamur bernama Magnaporthe oryzae (sebelumnya disebut sebagai Pyricularia oryzae). Penyakit ini merupakan salah satu penyakit yang paling merusak pada tanaman padi di seluruh dunia."
+                    android:textSize="20dp"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:layout_below="@id/line1"
+                    android:layout_marginTop="16sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/productsans"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginTop="16sp"
+            app:cardCornerRadius="8sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_marginTop="8sp">
+
+                <TextView
+                    android:id="@+id/jdul2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gejala"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/productsans"/>
+                <ImageView
+                    android:id="@+id/line2"
+                    android:layout_width="80sp"
+                    android:layout_height="5sp"
+                    android:src="@drawable/line"
+                    android:layout_below="@id/jdul2"
+                    android:layout_marginTop="5sp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gejalanya termasuk bercak-bercak kecil berbentuk bulan sabit pada daun, batang, atau malai padi yang kemudian berkembang menjadi bercak berwarna coklat atau hitam dengan tepi yang berwarna putih. Penyakit ini dapat menyebabkan daun menguning, kering, dan akhirnya mati."
+                    android:textSize="20dp"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:layout_below="@id/line2"
+                    android:layout_marginTop="16sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/productsans"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+            app:cardCornerRadius="8sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_marginTop="8sp">
+
+                <TextView
+                    android:id="@+id/jdul3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengendalian"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/productsans"/>
+                <ImageView
+                    android:id="@+id/line3"
+                    android:layout_width="150sp"
+                    android:layout_height="5sp"
+                    android:src="@drawable/line"
+                    android:layout_below="@id/jdul3"
+                    android:layout_marginTop="5sp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/ul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- Penggunaan varietas padi yang tahan,\n   terhadap penyakit ini seperti Inpari 21,\n   Inpari 22, Inpari 26, Inpari 27, Inpago 4,\n   Inpago 5, Inpago 6, Inpago 7, Inpago 8\n  \n- Jarak tanam yang tidak terlalu rapat\n   atau sistem legowo sangat dianjurkan\n   untuk membuat kondisi lingkungan\n   tidak menguntungkan bagi patogen\n   penyebab penyakit\n  \n- Penggunaan Fungisida Envoy 80 WP\n   yang merupakan fungisida sistemik \n   dengan dua bahan aktif mancozeb \n   dan trisiklazol,sangat ampuh\n   mengendalikan blast daun dan potong\n   leher daun pada tanaman padi."
+                    android:textSize="20dp"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:layout_below="@id/line3"
+                    android:layout_marginTop="16sp"
+                    android:fontFamily="@font/productsans"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
