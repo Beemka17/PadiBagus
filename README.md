@@ -13,7 +13,7 @@ PadiBagus is an application developed with the goal of enhancing rice farmers' p
 <h3>
    2. Dataset
 </h3>
-The dataset used in this study is sourced from Kaggle.com and can be accessed via (https://www.kaggle.com/datasets/baguskusuma/rice-leaf-disease). The sample of dataset is illustrated in the figure below
+The dataset used in this study is sourced from Kaggle.com and can be accessed via (https://www.kaggle.com/datasets/asheniranga/leaf-disease-dataset-combination). The sample of dataset is illustrated in the figure below
 <p align="center">
   <img src="Screenshot/sampledata.png" alt="Deskripsi gambar" height="360">
 </p>
