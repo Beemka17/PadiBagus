@@ -37,7 +37,7 @@ import java.util.Map;
 
 public class GrafikHarga extends AppCompatActivity {
 
-    private static final String URLS = "https://webapi.bps.go.id/v1/api/list/model/data/lang/ind/domain/0000/var/295/key/17a46cefa35f981c950288804603342d";
+    private static final String URLS = "pake API lu sendiri ler";
     private RequestQueue requestQueue;
     private LineChart lineChart;
     private Button go;
