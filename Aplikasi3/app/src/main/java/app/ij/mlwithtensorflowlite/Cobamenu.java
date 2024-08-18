@@ -63,7 +63,7 @@ public class Cobamenu extends AppCompatActivity {
     private TextView tvRicePrice;
     private TextView tvLastMonth;
     private RequestQueue requestQueue;
-    private static final String URLS = "https://webapi.bps.go.id/v1/api/list/model/data/lang/ind/domain/0000/var/295/key/17a46cefa35f981c950288804603342d";
+    private static final String URLS = "halah pler";
     FusedLocationProviderClient fusedLocationProviderClient;
     private final static int REQUEST_CODE = 100;
     Button start_ml;
@@ -95,7 +95,7 @@ public class Cobamenu extends AppCompatActivity {
         //Log.e("cityname",cityname);
         //String cityname1 = cityname.replace("Kecamatan","");
         String cobaja = "Purwakarta";
-        //String key= "20a0b53984ecbce68b9776ebc01a0f9f";
+        //String key= "pler lo semua";
         //String url= "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&lang=id&&appid="+key+"&units=metric";
 
         //Log.e("url",url);
@@ -131,7 +131,7 @@ public class Cobamenu extends AppCompatActivity {
                                     String cityname1 = citynama[0].replace("Kecamatan","");
                                     city.setText(addresses.get(0).getLocality());
                                     Log.e("result", citynama[0]);
-                                    String key= "20a0b53984ecbce68b9776ebc01a0f9f";
+                                    String key= "pler lo semua";
                                     String url= "https://api.openweathermap.org/data/2.5/weather?q=" + cityname1 + "&lang=id&&appid="+key+"&units=metric";
                                     new GetURLData().execute(url);
                                 } catch (IOException e) {
@@ -188,7 +188,7 @@ public class Cobamenu extends AppCompatActivity {
 
     private class GetURLData extends AsyncTask<String, String, String>{
         String cityname = city.getText().toString();
-        String key= "20a0b53984ecbce68b9776ebc01a0f9f";
+        String key= "pler lo semua";
         String url= "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&lang=id&&appid="+key+"&units=metric";
 
         protected void onPreExecute(){
