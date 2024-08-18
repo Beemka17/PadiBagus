@@ -90,7 +90,7 @@ public class PengaruhCuaca extends AppCompatActivity {
 
     private String getLocation(){
         final String[] citynama = {"Not Found"};
-        String key= "20a0b53984ecbce68b9776ebc01a0f9f";
+        String key= "PAKE API KEY LU SENDIRI MEK";
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
 
 
